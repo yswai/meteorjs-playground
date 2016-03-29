@@ -1,0 +1,25 @@
+<template name="homeIndex">
+    <div class="cover">
+        <img class="img-responsive" src="/images/splash/rocket-shop.jpg" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1>{{ message }}</h1>
+                    <p class="lead">
+                        To Mars With You!
+                    </p>
+                </div>
+            </div>
+            <hr/>
+        </div>
+    </div>
+    <div class="container marketing">
+        <div class="row">
+            {{#each products}}
+            {{> productTile this}}
+            {{/each}}
+        </div>
+    </div>
+</template>
